@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>EliCan</title>
+    <!-- icono -->
+    <link rel="icon" href="../img/logo_Elican.png" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="stylesheet" href="../css/artigos.css" />
+
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <!-- NavBar-->
+    <nav class="navbar navbar-expand-xl navbar-scroll shadow bg-white">
+      <div class="container">
+        <a class="navbar-brand mb-1" href="../index.html">
+          <img src="../img/logoEliCan_completo_branco.png" alt="EliCan" height="40">
+        </a>
+        <button class="navbar-toggler ps-0" type="button"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="d-flex justify-content-start align-items-center">
+            <i class="fas fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="enlaces">
+            <li class="nav-item" >
+              <a class="nav-link px-3" href="reserva.html">Pedir cita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="modifica.html">Xestionar cita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="servizos.html">Servizos</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link px-3" href="artigos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="contactanos.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="sobrenos.html">Sobre nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" href="faq.html">FAQ</a>
+            </li>
+          </ul>
+    
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item">
+              <a class="nav-link pe-3" target="_blank" href="https://www.twitter.com/">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-3" target="_blank" href="https://www.facebook.com/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ps-3" target="_blank" href="https://www.instagram.com/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NavBar -->
+
+    <!-- Header -->
+    <div class="bg-image mt-4 mb-3">
+      <img class="w-100" src="../img/header.jpg"/>
+      <div class="mask" style="background-color: rgba(0, 0, 0, 0.6)">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <h1 class="text-white mb-0">Os nosos artigos</h1>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
+
+    <div class="row m-0 p-0 zindex-sticky">
+
+    <!-- SideBar -->
+    <div class="col-md-2 justify-content-center shadow pt-4 px-3 bg-body sticky-top zindex-sticky vh-100" id="menuLateral">
+
+      <!-- Buscador -->
+      <div class="container my-4">
+        <div class="form-floating">
+          <input type="search" class="form-control" id="floatingInput" placeholder="Buscar artigo">
+          <label for="floatingInput">Buscar artigo</label>
+        </div>
+      </div>
+      <!-- Buscador -->
+
+      <!-- Scrollspy -->
+      <div class="mx-4">
+        <nav id="navbar-example" class="h-100 flex-column align-items-stretch">
+          <ul class="nav flex-column nav-pills menu-sidebar">
+            <li class="nav-item">
+              <a class="nav-link" href="#comida">Comida</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#accesorios">Accesorios</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link ms-3 my-1" href="#accesorios-correas">Correas e Colares</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link ms-3 my-1" href="#accesorios-xoguetes">Xoguetes</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#hixiene">Hixiene e Saúde</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Scrollspy -->
+      
+    </div>
+    <!-- SideBar -->
+
+    <!-- Panel Principal-->
+    <div class="col-md px-4 pt-5 pb-4">
+      <section id="comida">
+        <h3>Comida</h3>
+        <!-- Fila -->
+        <div class="row gy-3">
+          <!-- Elemento -->
+          <div class="col-md-3 justify-content-center">
+            <div class="card border justify-content-center">
+              <img src="../img/1_comida.jpg" class="card-img-top p-2" alt="Penso True Origins Adult Wild"/>
+              <div class="card-body border-top">
+                <h5 class="card-title">Penso True Origins Adult Wild 12kg</h5>
+                <p class="card-text">Penso elaborado para cans adultos, pensando nas súas necesidades nutricionais para mantener un cuerpo sano cheo de enerxía.</p>
+                <h5 class="card-title text-end">43,99 €</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Elemento -->
+      
+          <!-- Elemento -->
+          <div class="col-md-3">
+            <div class="card border">
+              <img src="../img/2_comida.jpg" class="card-img-top p-2" alt="Penso Royal Canin 7kg"/>
+              <div class="card-body border-top">
+                <h5 class="card-title">Penso Royal Canin 7kg</h5>
+                <p class="card-text">O penso Royal Canin hipoalerxénico facilita la digestión. Sabor neutro e composición natural.</p>
+                <h5 class="card-title text-end">50,00 €</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Elemento -->
+      
+          <!-- Elemento -->
+          <div class="col-md-3">
+            <div class="card border">
+              <img src="../img/3_comida.jpg" class="card-img-top p-2" alt="Penso Royal Canin Adult Maxi 4kg"/>
+              <div class="card-body border-top">
+                <h5 class="card-title">Penso Royal Canin Adult Maxi 4kg</h5>
+                <p class="card-text">Penso para cans adultos de razas grandes, con ingredientes seleccionados 
+                  para achegar unha alimentación completa e equilibrada.</p>
+                <h5 class="card-title text-end">19,99 €</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Elemento -->
+
+          <!-- Elemento -->
+          <div class="col-md-3">
+            <div class="card border">
+              <img src="../img/4_comida.jpg" class="card-img-top p-2" alt="Penso Royal Canin Adult Maxi 4kg"/>
+              <div class="card-body border-top">
+                <h5 class="card-title">Penso Royal Canin Adult Medium 4kg</h5>
+                <p class="card-text">
+                  Penso para cans adultos de raza mediana, con ingredientes fáciles de dixerir que lles achega a enerxía 
+                  necesaria para afrontar o día.</p>
+                <h5 class="card-title text-end">20,99 €</h5>
+              </div>
+            </div>
+          </div>
+          <!-- Elemento -->
+
+        </div>
+        <!-- Fila -->
+        </section>
+
+        <section class="pt-4" id="accesorios">
+          <h3>Accesorios</h3>
+          <section id="accesorios-correas">
+            <h4 class="ps-2">Colares e Correas</h4>
+            <!-- Fila -->
+            <div class="row gy-3">
+
+              <!-- Elemento -->
+              <div class="col-md-3 justify-content-center">
+                <div class="card border justify-content-center">
+                  <img src="../img/1_correa.jpg" class="card-img-top p-2" alt="Correa Wolfone"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Correa Wolfone</h5>
+                    <p class="card-text">Correa para cans de 150cm robusta de Nylon con mango acolchado suave e fíos reflectantes. Adecuada para cans pequenos e medianos.</p>
+                    <h5 class="card-title text-end">7,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/2_correa.jpg" class="card-img-top p-2" alt="Correa Coolbud Laranxa"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Correa Coolbud Laranxa</h5>
+                    <p class="card-text">Correa reflectante para cans extensible ata 5m. Apta para cans grandes ata 50 kg.</p>
+                    <h5 class="card-title text-end">25,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/3_correa.webp" class="card-img-top p-2" alt="Correa Giant Flexi"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Correa Giant Flexi</h5>
+                    <p class="card-text">Correa de cinta de 8 m para cans de ata máximo 50 kg. Asa blanda e robusta. Cinta robusta de color neón.</p>
+                    <h5 class="card-title text-end">30,00 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/1_colar.jpg" class="card-img-top p-2" alt="Colar Outech Estampado Unicornios"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Colar Outech Estampado Unicornios</h5>
+                    <p class="card-text">Accesorio de cor azul e estampado de unicornios para os teus cans de Outech.</p>
+                    <h5 class="card-title text-end">4,00 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/2_colar.jpg" class="card-img-top p-2" alt="Colar Outech Estampado Cadros"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Colar Outech Estampado Cadros</h5>
+                    <p class="card-text">
+                      Este colar de Outech proporciónalle comodidade ao teu can en cada paseo, ademais farao verse máis guapo.</p>
+                    <h5 class="card-title text-end">4,00 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/7_correa.jpg" class="card-img-top p-2" alt="Correa Flexi Confort extensible"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Correa Flexi Confort Extensible Básica</h5>
+                    <p class="card-text">Correa extensible ata 5 metros con cinta gris. Ideal para os teus paseos diarios.</p>
+                    <h5 class="card-title text-end">17,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/8_correa.jpg" class="card-img-top p-2" alt="Sunset Over the Sea"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Correa Flexi Confort Extensible Neon</h5>
+                    <p class="card-text">Correa extensible ata 5 metros con cinta reflectante rosa. Ideal para os teus paseos nocturnos.</p>
+                    <h5 class="card-title text-end">20,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/6_correa.jpg" class="card-img-top p-2" alt="Sunset Over the Sea"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Correa Outech Training</h5>
+                    <p class="card-text">Correa negra de adestramento con diferentes posicións para controlar os movementos da túa mascota.</p>
+                    <h5 class="card-title text-end">21,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/4_correa.jpg" class="card-img-top p-2" alt="Correa Outech Estampada"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Correa Outech Estampada</h5>
+                    <p class="card-text">Correa estampada de 1,5 metros para cans pequenos con mosquetón para suxeitar o arnés.</p>
+                    <h5 class="card-title text-end">7,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/5_correa.jpg" class="card-img-top p-2" alt="Correa Outech Estampada"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Correa Outech Negra</h5>
+                    <p class="card-text">Correa negra talla L resistente e segura con mosquetón para suxeitar o arnés.</p>
+                    <h5 class="card-title text-end">15,50 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+              
+              
+            </div>
+            <!-- Fila -->
+          </section>
+
+          <section class="pt-3" id="accesorios-xoguetes">
+            <h4 class="ps-2">Xoguetes</h4>
+            <!-- Fila -->
+            <div class="row gy-3">
+
+              <!-- Elemento -->
+              <div class="col-md-3 justify-content-center">
+                <div class="card border justify-content-center">
+                  <img src="../img/1_xoguetes.jpg" class="card-img-top p-2" alt="Pelota Play&Bite multicolor"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Pelota Play&Bite multicolor</h5>
+                    <p class="card-text">Esta pelota de Play&Bite ten unha forma diferente que axuda a limpar os 
+                      dentes do teu can mentres a morde.</p>
+                    <h5 class="card-title text-end">2,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+          
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/2_xoguetes.jpg" class="card-img-top p-2" alt="Pesa Wow Gum"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Pesa Wow Gum</h5>
+                    <p class="card-text">Mordedor para cans con forma de pesa dobre en caucho, que bota en distintas direccións. 
+                      Deseñado para o exercicio físico e a saúde bucal.</p>
+                    <h5 class="card-title text-end">2,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+          
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/3_xoguetes.jpg" class="card-img-top p-2" alt="Óso Wow Gum"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Óso Wow Gum</h5>
+                    <p class="card-text">O óso dental de Wow Gum é un fenomenal xoguete resistente, con sabor a 
+                      bacon e que coida a hixiene dental do teu can de raza pequena.</p>
+                    <h5 class="card-title text-end">2,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/4_xoguetes.jpg" class="card-img-top p-2" alt="Polo de xoguete Play&Bite"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Polo de xoguete Play&Bite</h5>
+                    <p class="card-text">Este xoguete para cans de Play&Bite pode ser o novo mellor amigo do teu peludo de 4 patas, 
+                      poderá durmir con el e levalo onde queira.</p>
+                    <h5 class="card-title text-end">2,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+            </div>
+            <!-- Fila -->
+          </section>
+          <section class="pt-4" id="hixiene">
+            <h3>Hixiene e Saúde</h3>
+            <!-- Fila -->
+            <div class="row gy-3">
+
+              <!-- Elemento -->
+              <div class="col-md-3 justify-content-center">
+                <div class="card border justify-content-center">
+                  <img src="../img/1_hixiene.jpg" class="card-img-top p-2" alt="Colar Antiparasitario Bayer"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Colar Antiparasitario Bayer</h5>
+                    <p class="card-text">O colar Seresto é un antiparasitario externo para cans que garante a protección contra as pulgas e as 
+                      garrapatas durante 8 meses e prevén a picadura do flebotomo.</p>
+                    <h5 class="card-title text-end">29,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              <!-- Elemento -->
+              <div class="col-md-3">
+                <div class="card border">
+                  <img src="../img/2_hixiene.jpg" class="card-img-top p-2" alt="Colar Antiparasitario Scalibor"/>
+                  <div class="card-body border-top">
+                    <h5 class="card-title">Colar Antiparasitario Scalibor</h5>
+                    <p class="card-text">Scalibor é un colar antiparasitario para cans efectivo durante 12 meses, perfecto para protexer á túa
+                       mascota das garrapatas, as pulgas e o flebotomo.</p>
+                    <h5 class="card-title text-end">21,99 €</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- Elemento -->
+
+              
+            </div>
+            <!-- Fila -->
+          </section>
+
+    </div>
+  </div>
+
+  </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-muted bg-light zindex-fixed">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom bg-light">
+
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Mantente informado a través das nosas redes sociais:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="https://twitter.com" target="_blank" class="me-4 link-dark text-decoration-none">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" class="me-4 link-dark text-decoration-none">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" class="me-4 link-dark text-decoration-none">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="bg-light pt-1">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+              <p class="mb-1"><i class="fas fa-home me-3 text-dark"></i> Santiago del Estero, 6</p>
+              <p class="mb-1"><i class="fas fa-home me-3 text-light"></i> 15701 Santiago de Compostela</p>
+              <p><i class="fas fa-home me-3 text-light"></i> Galicia</p>
+              <p>
+                <i class="fas fa-envelope me-3 text-dark"></i>
+                elican@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3 text-dark"></i> +34 604025148</p>
+
+              <div class="row mb-1">
+                <p class="col-sm-6 py-0 my-0"><i class="fa-solid fa-clock me-3 text-dark"></i>Luns-Venres</p><p class="col m-0 p-0">10:00-19:00 </p>
+              </div>
+              <div class="row mb-1">
+                <p class="col-sm-6 py-0 my-0"><i class="fa-solid fa-clock me-3 text-light"></i>Sábados</p><p class="col m-0 p-0">10:00-13:30 </p>
+              </div>
+              <div class="row mb-1">
+                <p class="col-sm-6 py-0 my-0"><i class="fa-solid fa-clock me-3 text-light"></i>Domingos</p><p class="col m-0 p-0">pechado</p>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fa fa-map-pin me-2 text-dark" aria-hidden="true"></i></i>Localízanos
+              </h6>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d826.438849573929!2d-8.552142300451697!3d42.8748433038907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2efe1555a3e98b%3A0x4bdc99a66b5d3b99!2sR%C3%BAa%20de%20Santiago%20del%20Estero%2C%206%2C%2015701%20Santiago%20de%20Compostela%2C%20A%20Coru%C3%B1a!5e0!3m2!1ses!2ses!4v1665735031703!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Navegación
+              </h6>
+              <p>
+                <a href="./html/index.html" class="text-reset">Inicio</a>
+              </p>
+              <p>
+                <a href="reserva.html" class="text-reset">Pedir cita</a>
+              </p>
+              <p>
+                <a href="artigos.html" class="text-reset">Produtos</a>
+              </p>
+              <p>
+                <a href="contactanos.html" class="text-reset">Contacto</a>
+              </p>
+              <p>
+                <a href="sobrenos.html" class="text-reset">Sobre nós</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      <!-- Copyright -->
+      <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="./html/index.html">EliCan.com</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>

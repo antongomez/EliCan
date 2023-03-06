@@ -1,0 +1,208 @@
+$light: #f8f9fa;
+$dark: #000509;
+$primary:    #4da93b;
+$secondary:  #51674f;
+$info:       #655d0c;
+$success:    #21b400;
+$warning:    #fec600;
+$danger:     #f90050;
+$white: #ffffff;
+
+$theme-colors: (
+    "light":      $light,
+    "dark":       $dark,
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "info":       $info,
+    "success":    $success,
+    "warning":    $warning,
+    "danger":     $danger
+);
+
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+$subraiado: $primary;
+$cor-texto: black;
+
+body {
+    background-color: $white;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-secondary:hover,
+.btn-outline-danger:hover {
+    color: white;
+}
+
+.navbar {
+    padding: 0.25em 0;
+    z-index: 300;
+}
+
+footer {
+  z-index: 300;
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .navbar {
+        padding: 0;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        padding: 1em 0;
+    }
+      
+    .active {
+        background-color: $subraiado;
+        
+        a {
+            background-color: white;
+            height: 95%;
+        }
+    }
+
+}
+
+.navbar .navbar-nav .nav-item a {
+    color: $cor-texto;
+}
+
+.navbar .navbar-nav .nav-item:hover a {
+    color: $primary;
+}
+
+// Scrollspy
+
+$scrollspy-menu-sidebar-font-size: 0.9rem !default;
+$scrollspy-menu-sidebar-color: #262626 !default;
+$scrollspy-menu-sidebar-line-height: 1.1rem !default;
+$scrollspy-menu-sidebar-padding-x: 5px !default;
+$scrollspy-menu-sidebar-font-weight: 400 !default;
+$scrollspy-menu-sidebar-transition: all 0.2s ease-in-out !default;
+$scrollspy-menu-sidebar-margin-y: 3px !default;
+
+$scrollspy-menu-sidebar-active-color: $primary !default;
+$scrollspy-menu-sidebar-active-font-weight: 600 !default;
+$scrollspy-menu-sidebar-active-border-width: 0.125rem !default;
+$scrollspy-menu-sidebar-active-border-color: $primary !default;
+
+.nav-pills {
+  &.menu-sidebar {
+    .nav-link {
+      font-size: $scrollspy-menu-sidebar-font-size;
+      background-color: transparent;
+      color: $scrollspy-menu-sidebar-color;
+      line-height: $scrollspy-menu-sidebar-line-height;
+      padding: 0 $scrollspy-menu-sidebar-padding-x;
+      font-weight: $scrollspy-menu-sidebar-font-weight;
+      transition: $scrollspy-menu-sidebar-transition;
+      text-transform: initial;
+      margin-top: $scrollspy-menu-sidebar-margin-y;
+      margin-bottom: $scrollspy-menu-sidebar-margin-y;
+    }
+
+    .nav-link.active,
+    .show > .nav-link {
+      background-color: transparent;
+      box-shadow: none;
+      color: $scrollspy-menu-sidebar-active-color;
+      font-weight: $scrollspy-menu-sidebar-active-font-weight;
+      border-left: $scrollspy-menu-sidebar-active-border-width solid
+        $scrollspy-menu-sidebar-active-border-color;
+      border-radius: 0;
+    }
+
+    .collapsible-scrollspy ~ .nav {
+      transition: height 0.5s ease;
+      flex-wrap: nowrap;
+    }
+  }
+}
+
+
+//
+// Images
+//
+
+$box-shadow-4-strong: 0 2px 15px -3px rgb(0 0 0 / 16%), 0 10px 20px -2px rgb(0 0 0 / 10%) !default;
+$box-shadow-5: 0 2px 25px -5px rgb(0 0 0 / 7%), 0 25px 21px -5px rgb(0 0 0 / 4%) !default;
+
+$image-hover-overlay-transition: all 0.3s ease-in-out !default;
+
+$image-hover-zoom-transition: all 0.3s linear !default;
+$image-hover-zoom-transform: scale(1.1) !default;
+
+$image-hover-shadow-transition: $image-hover-overlay-transition !default;
+$image-hover-shadow-box-shadow: $box-shadow-4-strong !default;
+$image-hover-shadow-box-shadow-soft: $box-shadow-5 !default;
+
+.bg-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-attachment: fixed;
+  }
+  
+  .hover-overlay {
+    .mask {
+      opacity: 0;
+      transition: $image-hover-overlay-transition;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  
+  .hover-zoom {
+    img,
+    video {
+      transition: $image-hover-zoom-transition;
+    }
+    &:hover {
+      img,
+      video {
+        transform: $image-hover-zoom-transform;
+      }
+    }
+  }
+  
+  .hover-shadow,
+  .card.hover-shadow {
+    box-shadow: none;
+    transition: $image-hover-shadow-transition;
+    &:hover {
+      box-shadow: $image-hover-shadow-box-shadow;
+      transition: $image-hover-shadow-transition;
+    }
+  }
+  
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+  
+  .hover-shadow-soft,
+  .card.hover-shadow-soft {
+    box-shadow: none;
+    transition: $image-hover-shadow-transition;
+    &:hover {
+      box-shadow: $image-hover-shadow-box-shadow-soft;
+      transition: $image-hover-shadow-transition;
+    }
+  }
+
+
+  
