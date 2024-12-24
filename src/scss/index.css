@@ -1,0 +1,58 @@
+.bg-image {
+  position: relative;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image .mask-escura,
+.bg-image .mask-clara {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-image .mask-escura {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.bg-image .mask-clara {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption a.btn-primary {
+  border-color: white;
+  border-radius: 2px;
+  border-width: 3px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: 500;
+}
+
+.carousel-caption a.btn-primary:hover {
+  color: black;
+  border-color: white;
+  background-color: white;
+}
+
+.carousel-caption a.btn-primary {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  letter-spacing: -0.05rem;
+}
+
+.featurette p {
+  text-align: justify;
+}
+
+.carousel a {
+  color: white;
+}/*# sourceMappingURL=index.css.map */
